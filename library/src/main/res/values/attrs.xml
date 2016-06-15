@@ -11,6 +11,8 @@
         <attr name="progress_text_padding" format="dimension" />
     </declare-styleable>
 
-
+    <declare-styleable name="CircleProgressBarWithNumber">
+        <attr name="radius" format="dimension" />
+    </declare-styleable>
 
 </resources>

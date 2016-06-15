@@ -21,16 +21,16 @@ public class HorizontalProgressBarWithNumber extends ProgressBar {
     private static final int DEFAULT_UNREACHED_HEIGHT = 2;
     private static final int DEFAULT_SIZE_TEXT_PADDING = 10;
 
-    private int mTextSize = sp2px(DEFAULT_TEXT_SIZE);
-    private int mTextColor = DEFAULT_TEXT_COLOR;
-    private int mTextPadding = dp2px(DEFAULT_SIZE_TEXT_PADDING);
-    private int mReachedColor = DEFAULT_REACHED_COLOR;
-    private int mReachedHeight = dp2px(DEFAULT_REACHED_HEIGHT);
-    private int mUnReachedColor = DEFAULT_UNREACHED_COLOR;
-    private int mUnReachedHeight = dp2px(DEFAULT_UNREACHED_HEIGHT);
+    protected int mTextSize = sp2px(DEFAULT_TEXT_SIZE);
+    protected int mTextColor = DEFAULT_TEXT_COLOR;
+    protected int mTextPadding = dp2px(DEFAULT_SIZE_TEXT_PADDING);
+    protected int mReachedColor = DEFAULT_REACHED_COLOR;
+    protected int mReachedHeight = dp2px(DEFAULT_REACHED_HEIGHT);
+    protected int mUnReachedColor = DEFAULT_UNREACHED_COLOR;
+    protected int mUnReachedHeight = dp2px(DEFAULT_UNREACHED_HEIGHT);
 
-    private Paint mPaint = new Paint();
-    private int mRealWidth;
+    protected Paint mPaint = new Paint();
+    protected int mRealWidth;
 
     public HorizontalProgressBarWithNumber(Context context) {
         this(context, null);
@@ -46,6 +46,7 @@ public class HorizontalProgressBarWithNumber extends ProgressBar {
         obtainStyledAttrs(attrs);
         mPaint.setTextSize(mTextSize);
         mPaint.setColor(mTextColor);
+        mPaint.setAntiAlias(true);
     }
 
     @Override
