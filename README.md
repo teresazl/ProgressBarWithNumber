@@ -37,6 +37,9 @@
 ### Activity中
          mHProgressBar = (HorizontalProgressBarWithNumber) findViewById(R.id.h_progressbar);
          mHProgressBar.setProgress(++progress);
-         
+
+# 关于
+欢迎star  
+欢迎反馈问题：teresazl@yeah.net
 
 [1]: https://github.com/teresazl/ProgressBarWithNumber/blob/master/screenshots/processbar_with_number.gif
