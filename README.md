@@ -1,5 +1,6 @@
 # ProgressBarWithNumber
 一个带有数字显示的进度条，从ProgressBar继承
+跟着hyman大神学习的:-)
 
 # 演示
 ![Sample Screenshots][1]
